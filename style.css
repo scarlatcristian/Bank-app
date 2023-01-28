@@ -4,7 +4,7 @@
   --color-tertiary: #ff585f;
   --color-primary-darker: #84f5a2;
   --color-secondary-darker: #ffbb00;
-  --color-tertiary-darker: #fd424b;
+  --color-tertiary-darker: #e90d18;
   --color-primary-opacity: #5ec5763a;
   --color-secondary-opacity: #ffcd0331;
   --color-tertiary-opacity: #ff58602d;
@@ -272,4 +272,99 @@ h4 {
 .features__header {
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+
+/* OPERATIONS */
+
+.operations {
+  max-width: 100rem;
+  margin: 12rem auto 0 auto;
+  background-color: #fff;
+}
+
+.operations__tab-container {
+  display: flex;
+  justify-content: center;
+}
+
+.operations__tab {
+  margin-right: 2.5rem;
+  transform: translateY(-50%);
+}
+
+.operations__tab span {
+  margin-right: 1rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.operations__tab--1 {
+  background-color: var(--color-primary);
+}
+
+.operations__tab--1:hover {
+  background-color: var(--color-primary-darker);
+}
+
+.operations__tab--2 {
+  background-color: var(--color-secondary-darker);
+}
+
+.operations__tab--2:hover {
+  background-color: var(--color-secondary);
+}
+
+.operations__tab--3 {
+  background-color: var(--color-tertiary-darker);
+}
+
+.operations__tab--3:hover {
+  background-color: var(--color-tertiary);
+}
+
+.operations__tab--active {
+  transform: translateY(-65%);
+}
+
+.operations__content {
+  display: none;
+  font-size: 1.8rem;
+  padding: 2.5rem 7rem 6.5rem 7rem;
+}
+
+.operations__content--active {
+  display: flex;
+  flex-direction: column;
+}
+
+.operations__header {
+  font-size: 2.2rem;
+  font-weight: 500;
+  align-self: center;
+}
+
+.operations__icon {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  margin: 1em;
+}
+
+.options__container {
+  display: flex;
+}
+
+.operations__icon--1 {
+  background-color: var(--color-primary-opacity);
+}
+
+.operations__icon--2 {
+  background-color: var(--color-secondary-opacity);
+}
+
+.operations__icon--3 {
+  background-color: var(--color-tertiary-opacity);
 }
