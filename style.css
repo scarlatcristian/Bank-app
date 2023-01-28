@@ -227,3 +227,49 @@ h4 {
   transform: scale(1.07, 1.05) skewX(-15deg);
   background-image: var(--gradient-primary);
 }
+
+/* FEATURES */
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin: 0 12rem;
+}
+
+.features__img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+.credit__card {
+  width: 75%;
+  border-radius: 25px;
+}
+
+.features__feature {
+  align-self: center;
+  justify-content: center;
+  width: 75%;
+  font-size: 1.5rem;
+}
+
+.features__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.features__icon img {
+  height: 4rem;
+  width: 4rem;
+}
+
+.features__header {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
