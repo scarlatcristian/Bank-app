@@ -68,7 +68,7 @@
 
         <div class="features__feature">
           <div class="features__icon">
-            <img src="img/laptop.png" alt="laptop" />
+            <img src="img/icons/laptop.png" alt="laptop" />
           </div>
           <h5 class="features__header">Accessible from anywhere</h5>
           <p>
@@ -79,7 +79,7 @@
 
         <div class="features__feature">
           <div class="features__icon">
-            <img src="img/rising.png" alt="rising" />
+            <img src="img/icons/rising.png" alt="rising" />
           </div>
           <h5 class="features__header">Watch your money grow</h5>
           <p>
@@ -92,7 +92,7 @@
         <img src="img/credit-card.png" alt="credit-card" class="credit__card" />
         <div class="features__feature">
           <div class="features__icon">
-            <img src="img/credit-card-icon.png" alt="rising" />
+            <img src="img/icons/credit-card-icon.png" alt="rising" />
           </div>
           <h5 class="features__header">Free debit card included</h5>
           <p>
@@ -133,7 +133,9 @@
           class="operations__content operations__content--1 operations__content--active"
         >
           <div class="options__container">
-            <div class="operations__icon operations__icon--1"></div>
+            <div class="operations__icon operations__icon--1">
+              <img src="img/icons/transfer.png" alt="instant-transfer" />
+            </div>
             <h5 class="operations__header">
               Transfer money to anyone! No fees, no waiting time, no BS.
             </h5>
@@ -147,10 +149,14 @@
         </div>
 
         <div class="operations__content operations__content--2">
-          <div class="operations__icon operations__icon--2"></div>
-          <h5 class="operations__header">
-            Buy a home with instant loans at Citex Bank!
-          </h5>
+          <div class="options__container">
+            <div class="operations__icon operations__icon--2">
+              <img src="img/icons/loan.png" alt="instant-loan" />
+            </div>
+            <h5 class="operations__header">
+              Buy a home with instant loans at Citex Bank!
+            </h5>
+          </div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
             dolores tempore soluta, omnis ea cum ipsa optio sequi. Repellendus
@@ -160,11 +166,15 @@
         </div>
 
         <div class="operations__content operations__content--3">
-          <div class="operations__icon operations__icon--3"></div>
-          <h5 class="operations__header">
-            You no longer need an account? No problem! Close it instantly at no
-            extra fees.
-          </h5>
+          <div class="options__container">
+            <div class="operations__icon operations__icon--3">
+              <img src="img/icons/closing.png" alt="instant-closing" />
+            </div>
+            <h5 class="operations__header">
+              You no longer need an account? Close it instantly at no extra
+              fees.
+            </h5>
+          </div>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
             asperiores aspernatur a explicabo earum deleniti velit harum animi
@@ -183,6 +193,106 @@
           easier.
         </h3>
       </div>
+
+      <div class="slider">
+        <div class="slide slide--1">
+          <div class="testimonial">
+            <h5 class="testimonial__header">Best decision i ever made!</h5>
+            <blockquote class="testimonial__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et maxime
+              error eos distinctio voluptates minima quaerat non ut nesciunt.
+              Quia temporibus illum quos culpa, incidunt fuga fugiat nostrum ad
+              aliquam consectetur ex! Deleniti officia in, odit quidem laborum
+              sed, eum provident adipisci repellendus ducimus cum dignissimos
+              ipsa harum labore. Rem!
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-1.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Johnny Bravo</h6>
+              <p class="testimonial__location">San Francisco, USA</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--2">
+          <div class="testimonial">
+            <h5 class="testimonial__header">I use it everyday</h5>
+            <blockquote class="testimonial__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
+              maiores facere eveniet ea, ab iure est sapiente libero fugit
+              necessitatibus sint et non deserunt obcaecati consequatur autem
+              nostrum officiis delectus dolorum quasi impedit dicta cumque quos?
+              Quod deleniti inventore perspiciatis, reiciendis vitae vel
+              repudiandae, ipsa quisquam dicta suscipit soluta magni!
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-2.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Ann Botez</h6>
+              <p class="testimonial__location">Toronto, Canada</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--3">
+          <div class="testimonial">
+            <h5 class="testimonial__header">So fast and easy to use!</h5>
+            <blockquote class="testimonial__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur assumenda sunt praesentium magni! Nostrum,
+              perspiciatis ipsa, exercitationem quo esse cumque temporibus
+              minima explicabo harum inventore rerum repudiandae illo fugit
+              possimus mollitia libero quod delectus corporis rem earum aut.
+              Veniam cumque eaque at voluptates voluptatibus, hic error id iure
+              maiores. Labore.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-3.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Christian McGree</h6>
+              <p class="testimonial__location">London, UK</p>
+            </address>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
     </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          The best time to join Citex Bank was yesterday. The second best time
+          is today!
+        </h3>
+      </div>
+      <button class="btn btn--show-modal">Open your account today!</button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About Us</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <div class="footer__container--logo">
+        <img src="img/logo-no-background.png" alt="logo" class="footer__logo" />
+      </div>
+      <p class="footer__copyright">
+        &copy; Copyright by Citex Bank Design Ltd. All rights reserved.
+      </p>
+    </footer>
   </body>
 </html>
