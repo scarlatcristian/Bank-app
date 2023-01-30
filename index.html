@@ -31,7 +31,7 @@
             <a class="nav__link" href="#section--3">Testimonials</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+            <a class="nav__link nav__link--btn btn--open-modal" href="#"
               >Open account</a
             >
           </li>
@@ -266,33 +266,57 @@
           is today!
         </h3>
       </div>
-      <button class="btn btn--show-modal">Open your account today!</button>
+      <button class="btn btn--open-modal">Open your account today!</button>
     </section>
 
     <footer class="footer">
-      <ul class="footer__nav">
-        <li class="footer__item">
-          <a class="footer__link" href="#">About Us</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Pricing</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Terms of Use</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Privacy Policy</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Contact Us</a>
-        </li>
-      </ul>
-      <div class="footer__container--logo">
-        <img src="img/logo-no-background.png" alt="logo" class="footer__logo" />
+      <div class="footer__container">
+        <div class="footer__container--logo">
+          <img
+            src="img/logo-no-background.png"
+            alt="logo"
+            class="footer__logo"
+          />
+        </div>
+        <div class="footer__list">
+          <ul class="footer__nav">
+            <li class="footer__item">
+              <a class="footer__link" href="#">About Us</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Pricing</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Terms of Use</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Privacy Policy</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
       </div>
+
       <p class="footer__copyright">
         &copy; Copyright by Citex Bank Design Ltd. All rights reserved.
       </p>
     </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">Open your account today</h2>
+      <form class="modal__form">
+        <label for="First Name">First Name</label>
+        <input type="text" />
+        <label for="Last Name">Last Name</label>
+        <input type="text" />
+        <label for="email">Email Adress</label>
+        <input type="text" />
+        <button class="btn">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
   </body>
 </html>
