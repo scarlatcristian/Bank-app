@@ -153,6 +153,10 @@ img {
   transition: all 0.3s;
 }
 
+.nav__link:hover {
+  color: rgb(111, 110, 110);
+}
+
 .nav__link--btn:link,
 .nav__link--btn:visited {
   padding: 0.8rem 2.5rem;
@@ -203,6 +207,7 @@ h4 {
 
 .header__img {
   width: 100%;
+  margin-top: 6rem;
   grid-column: 2 / 3;
   grid-row: 1 / span 4;
   transform: translateY(-6rem);
@@ -278,6 +283,7 @@ h4 {
   max-width: 100rem;
   margin: 12rem auto 0 auto;
   background-color: #fff;
+  border-radius: 2rem;
 }
 
 .operations__tab-container {
@@ -564,20 +570,29 @@ h4 {
 
 .footer__container {
   display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
   align-items: center;
-  justify-content: start;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__logo {
   height: 15rem;
   display: block;
-  margin-right: 18rem;
+  padding-top: 4rem;
+  height: 15rem;
 }
 
 .footer__copyright {
   font-size: 1.5rem;
   color: #aaa;
   text-align: center;
+  margin-top: 4rem;
 }
 
 /* MODAL WINDOW */
