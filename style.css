@@ -98,10 +98,9 @@ p {
   color: #666;
 }
 
-/* This is BAD for accessibility! Don't do in the real world! */
-button:focus {
+/* button:focus {
   outline: none;
-}
+} */
 
 img {
   transition: filter 0.5s;
@@ -116,7 +115,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 9rem;
+  height: 10rem;
   width: 100%;
   padding: 0 6rem;
   z-index: 100;
@@ -128,8 +127,8 @@ img {
 }
 
 .nav__logo {
-  padding-top: 4rem;
-  height: 15rem;
+  padding-top: 1rem;
+  height: 9rem;
   transition: all 0.3s;
 }
 
@@ -170,6 +169,10 @@ img {
   color: inherit;
   background-color: var(--color-primary-darker);
   color: #333;
+}
+
+.lazy-img {
+  filter: blur(20px);
 }
 
 /* HEADER */
@@ -451,6 +454,7 @@ h4 {
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.5s;
+  margin-right: 2rem;
 }
 
 .dots__dot:last-child {
@@ -547,7 +551,7 @@ h4 {
 
 /* FOOTER */
 .footer {
-  padding: 10rem 3rem;
+  padding: 5rem 0;
   background-color: #37383d;
 }
 
@@ -568,9 +572,14 @@ h4 {
   text-decoration: none;
 }
 
+.footer__link:hover {
+  /* color: rgb(111, 110, 110); */
+  color: var(--color-primary);
+}
+
 .footer__container {
   display: flex;
-  flex-direction: column-reverse;
+  /* flex-direction: column-reverse; */
   justify-content: center;
   align-items: center;
 }
@@ -582,6 +591,9 @@ h4 {
 }
 
 .footer__logo {
+  position: relative;
+  top: -5rem;
+  left: -5rem;
   height: 15rem;
   display: block;
   padding-top: 4rem;
