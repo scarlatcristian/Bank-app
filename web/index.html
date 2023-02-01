@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="img/logo-no-background.png" />
+    <link rel="icon" href="img/logo-no-background." />
     <link rel="stylesheet" href="style.css" />
 
-    <title>Citex Bank | Count on us</title>
+    <title>Citex Bank | Login</title>
 
     <script defer src="app.js"></script>
+    <script defer src="../app/bank-app.js"></script>
   </head>
   <body>
     <header class="header">
@@ -31,8 +32,11 @@
             <a class="nav__link" href="#section--3">Testimonials</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link nav__link--btn btn--open-modal" href="#"
-              >Open account</a
+            <a class="nav__link btn--open-modal" href="#">Open account</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn" href="../app/login.html"
+              >Login</a
             >
           </li>
         </ul>
@@ -318,12 +322,12 @@
       <h2 class="modal__header">Open your account today</h2>
       <form class="modal__form">
         <label for="First Name">First Name</label>
-        <input type="text" />
+        <input class="form--first-name" type="text" />
         <label for="Last Name">Last Name</label>
-        <input type="text" />
+        <input class="form--last-name" type="text" />
         <label for="email">Email Adress</label>
-        <input type="text" />
-        <button class="btn">Next step &rarr;</button>
+        <input class="form--email" type="text" />
+        <button class="btn btn--next-step">Next step &rarr;</button>
       </form>
     </div>
     <div class="overlay hidden"></div>

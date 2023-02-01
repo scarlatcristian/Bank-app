@@ -40,10 +40,11 @@ btnScrollTo.addEventListener("click", function (e) {
 
 // PAGE NAVIGATION
 navLinks.addEventListener("click", function (e) {
-  e.preventDefault();
+  // e.preventDefault();
 
   if (e.target.classList.contains("nav__link")) {
     const id = e.target.getAttribute("href");
+    if (id === "#" || id === "../app/login.html") return;
     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
   }
 });
@@ -211,3 +212,18 @@ const slider = function () {
 };
 
 slider();
+
+//TODO: SEND FORM TO OPEN ACCOUNT
+const sendForm = document.querySelector(".btn--next-step");
+sendForm.addEventListener("click", function () {
+  const firstName = document.querySelector(".form--first-name").value;
+  const lastName = document.querySelector(".form--last-name").value;
+  const email = document.querySelector(".form--email").value;
+
+  if (firstName === "" || lastName === "" || email === "") {
+    closeModal();
+    return;
+  }
+  sessionStorage.setItem("userData", `${firstName} ${lastName} ${email}`);
+  closeModal();
+});

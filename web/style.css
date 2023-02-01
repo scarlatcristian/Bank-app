@@ -175,6 +175,13 @@ img {
   filter: blur(20px);
 }
 
+.login {
+  position: relative;
+  top: -4em;
+  right: -40em;
+  z-index: 10;
+}
+
 /* HEADER */
 .header {
   padding: 0 3rem;
